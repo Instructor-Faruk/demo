@@ -1,10 +1,5 @@
 // Backend API address
-const API_URL = "http://127.0.0.1:8000/studen
-
-
-
-
-ts";
+const API_URL = "https://demo-i2la.onrender.com/students";
 
 // null = adding a new student, a number = editing that roll
 let editingRoll = null;
