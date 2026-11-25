@@ -1,5 +1,10 @@
 // Backend API address
-const API_URL = "http://127.0.0.1:8000/students";
+const API_URL = "http://127.0.0.1:8000/studen
+
+
+
+
+ts";
 
 // null = adding a new student, a number = editing that roll
 let editingRoll = null;

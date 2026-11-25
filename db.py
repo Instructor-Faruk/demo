@@ -1,13 +1,19 @@
 # ==========================================
 # db.py  ->  Connection to the database
 # ==========================================
+import os
+
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import sessionmaker, declarative_base
 
 # MySQL server address. Format: mysql+pymysql://USERNAME:PASSWORD@HOST:PORT
 # XAMPP: username is root and the password is empty
-SERVER_URL = "mysql+pymysql://root:root@localhost:3306"
-DB_NAME = "alchemyBD"
+#SERVER_URL = "mysql+pymysql://root:root@localhost:3306"    #psycopg2
+
+SERVER_URL = "postgresql://alchemybd_user:GVrCE9x578suKx8mI89zqHYPD7hnTJXL@dpg-dc36ia9ksfps7396g5sg-a.oregon-postgres.render.com/alchemybd"
+
+
+DB_NAME = "alchemydb"
 
 # Create the database automatically if it doesn't exist yet
 # (so you don't need phpMyAdmin to create it)
